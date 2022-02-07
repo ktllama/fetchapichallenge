@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const API_URL='https://jsonplaceholder.typicode.com/';
+  const[reqType, setReqType] = useState('users');
+  //this state will be either the request for users, posts or comments and will show depending on which button you click
+  const[dataObj, setDataObj] = useState([]);
+  //this will be the data objects we get back from the fetch req
+
+  return(
+    <>
+
+    </>
   );
 }
 
