@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import Form from './Form';
 import DataList from './DataList';
+import DataTable from './DataTable';
 
 function App() {
   const API_URL='https://jsonplaceholder.typicode.com/';
@@ -31,7 +32,8 @@ function App() {
   return(
     <>
       <Form reqType={reqType} setReqType={setReqType} />
-      <DataList dataObj={dataObj} />
+      {/* <DataList dataObj={dataObj} /> */}
+      <DataTable dataObj={dataObj} />
     </>
   );
 }
