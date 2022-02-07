@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Form from './Form';
+import DataList from './DataList';
 
 function App() {
   const API_URL='https://jsonplaceholder.typicode.com/';
@@ -14,6 +15,7 @@ function App() {
       try {
         const response = await fetch(`${API_URL}${reqType}`);
         const data = await response.json();
+        // console.log(data);
         setDataObj(data);
       } catch (err) {
         console.log(err);
@@ -29,6 +31,7 @@ function App() {
   return(
     <>
       <Form reqType={reqType} setReqType={setReqType} />
+      <DataList dataObj={dataObj} />
     </>
   );
 }
