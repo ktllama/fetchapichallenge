@@ -1,9 +1,9 @@
 const DataCell = ({ cellData }) => {
-  return <div>
+  return(
       <td>
           {cellData}
       </td>
-  </div>;
+  );
 };
 
 export default DataCell;

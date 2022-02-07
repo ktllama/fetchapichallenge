@@ -2,15 +2,15 @@ import DataRow from "./DataRow";
 
 const DataTable = ({ dataObj }) => {
   return (
-    <div className="table-container">
-        <table>
-            <tbody>
-                {dataObj.map(data => (
-                    <DataRow key={data.id} data={data} />
-                ))}
-            </tbody> 
-        </table>
-    </div>
+        <div className="table-container">
+            <table>
+                <tbody>
+                    {dataObj.map(data => (
+                        <DataRow key={data.id} data={data} />
+                    ))}
+                </tbody> 
+            </table>
+        </div>
   );
 };
 

@@ -8,7 +8,6 @@ const DataRow = ({ data }) => {
                     <DataCell key={key} cellData={JSON.stringify(value)} />
                 )
             })}
-
         </tr>
     )
 };
